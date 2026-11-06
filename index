@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes tesla {
+            0% { transform: translateX(0) }
+            100% { transform: translateX(1000px) }
+        }
+        body {
+            background-color: rgb(31, 30, 30);
+        }
+        .car {
+            top: 500px;
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 250px;
+            animation: tesla 5s;
+        }
+        #roof {
+            background-color: black;
+            width: 200px;
+            height: 15px;
+            margin: 50px 150px 0px 150px;
+        }
+        #window {
+            background-color: aqua;
+            width: 200px;
+            height: 63px;
+            margin: 0px 150px 0px 150px;
+        }
+        #body {
+            background-color: black;
+            width: 350px;
+            height: 70px;
+            margin: 0px 10px 0px 75px;
+        }
+        #wheel1 {
+            background-color: gray;
+            width: 60px;
+            height: 60px;
+            margin: -35px 20px 0px 90px;
+            border-radius: 50%;
+        }
+        #wheel2 {
+            background-color: gray;
+            width: 60px;
+            height: 60px;
+            margin: -60px 0px -10px 350px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="car">
+        <div id="roof"></div>
+        <div id="window"></div>
+        <div id="body"></div>
+        <div id="wheel1"></div>
+        <div id="wheel2"></div>
+    </div>
+</body>
+</html>
